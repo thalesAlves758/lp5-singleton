@@ -26,4 +26,10 @@ public class OrganizationTest {
         organization.setLogoPath("/alguma/pasta/qualquer/logo.png");
         assertEquals(organization.getLogoPath(), "/alguma/pasta/qualquer/logo.png");
     }
+
+    @Test
+    public void shouldReturnOrganizationPrimaryColor() {
+        organization.setPrimaryColor("#884dff");
+        assertEquals(organization.getPrimaryColor(), "#884dff");
+    }
 }
