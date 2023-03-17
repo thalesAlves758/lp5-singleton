@@ -20,4 +20,10 @@ public class OrganizationTest {
         organization.setName("Alguma Organização");
         assertEquals(organization.getName(), "Alguma Organização");
     }
+
+    @Test
+    public void shouldReturnOrganizationLogoPath() {
+        organization.setLogoPath("/alguma/pasta/qualquer/logo.png");
+        assertEquals(organization.getLogoPath(), "/alguma/pasta/qualquer/logo.png");
+    }
 }
