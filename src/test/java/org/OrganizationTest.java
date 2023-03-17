@@ -32,4 +32,10 @@ public class OrganizationTest {
         organization.setPrimaryColor("#884dff");
         assertEquals(organization.getPrimaryColor(), "#884dff");
     }
+
+    @Test
+    public void shouldReturnOrganizationSecondaryColor() {
+        organization.setSecondaryColor("#000000");
+        assertEquals(organization.getSecondaryColor(), "#000000");
+    }
 }
