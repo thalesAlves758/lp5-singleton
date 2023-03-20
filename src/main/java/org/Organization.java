@@ -4,7 +4,7 @@ public class Organization {
     private String name;
     private String logoPath;
     private String primaryColor;
-    private String SecondaryColor;
+    private String secondaryColor;
 
     private static Organization instance;
 
@@ -43,10 +43,10 @@ public class Organization {
     }
 
     public String getSecondaryColor() {
-        return SecondaryColor;
+        return this.secondaryColor;
     }
 
     public void setSecondaryColor(String secondaryColor) {
-        SecondaryColor = secondaryColor;
+        this.secondaryColor = secondaryColor;
     }
 }
